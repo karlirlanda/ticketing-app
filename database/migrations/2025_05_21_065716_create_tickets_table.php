@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('subject')->nullable();
             $table->text('description')->nullable();
             $table->integer('priority')->nullable();
-            $table->integer('status')->nullable();
+            $table->integer('status')->nullable()->default(1);
             $table->unsignedBigInteger('created_by')->nullable();
             $table->unsignedBigInteger('updated_by')->nullable();
             $table->timestamps();
